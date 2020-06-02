@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">TicTacToe</string>
-    <string name="title_activity_login">Login</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="configure_header_text">Configure Settings for the Player</string>
+    <string name="user_info_text">Let\'s Play</string>
+    <string name="player2_turn_text">It\'s Player 2\'s turn</string>
+    <string name="player1_turn_text">It\'s Player1\'s turn</string>
+    <string name="draw">It\'s a Draw</string>
+    <string name="player1wins">Player 1 wins</string>
+    <string name="player2wins">Player 2 wins</string>
 </resources>

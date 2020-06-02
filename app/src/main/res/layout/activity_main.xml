@@ -8,17 +8,19 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="#fff"
         android:id="@+id/currentUserTurnTxt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        app:layout_constraintBottom_toTopOf="@id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TableLayout
-        android:padding="20dp"
         android:id="@+id/tableLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,56 +28,81 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
+        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
-            android:layout_marginTop="20dp"
             android:id="@+id/row1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/img1"
-                android:padding="10dp"
-                android:layout_width="wrap_content"
-                android:src="@drawable/x"
-                android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cellClick"
+                    android:padding="10dp" />
+            </LinearLayout>
+
             <View
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary"
-                android:id="@+id/border"
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
-                />
-            <androidx.appcompat.widget.AppCompatImageView
-                android:padding="10dp"
-                android:id="@+id/img2"
-                android:layout_width="wrap_content"
-                android:src="@drawable/x"
-                android:layout_height="wrap_content"/>
-            <View
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cellClick"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <View
+
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
-                />
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/img3"
-                android:padding="10dp"
-                android:layout_width="wrap_content"
-                android:src="@drawable/x"
-                android:layout_height="wrap_content"/>
-            <View
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cellClick"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <View
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
-                />
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/colorPrimary" />
         </TableRow>
 
         <View
@@ -87,49 +114,73 @@
             android:background="@color/colorPrimary" />
 
         <TableRow
-            android:layout_marginTop="20dp"
             android:id="@+id/row2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/img4"
-                android:layout_width="wrap_content"
-                android:padding="10dp"
-                android:src="@drawable/x"
-                android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cellClick"
+                    android:padding="10dp" />
+            </LinearLayout>
+
             <View
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary"
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
-                />
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/img5"
-                android:layout_width="wrap_content"
-                android:src="@drawable/x"
-                android:padding="10dp"
-                android:layout_height="wrap_content"/>
-            <View
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cellClick"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <View
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
-                />
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/img6"
-                android:layout_width="wrap_content"
-                android:src="@drawable/x"
-                android:padding="10dp"
-                android:layout_height="wrap_content"/>
-            <View
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cellClick"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <View
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
-                />
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/colorPrimary" />
         </TableRow>
 
         <View
@@ -141,49 +192,66 @@
             android:background="@color/colorPrimary" />
 
         <TableRow
-            android:layout_marginTop="10dp"
             android:id="@+id/row3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/img7"
-                android:layout_width="wrap_content"
-                android:padding="10dp"
-                android:src="@drawable/nut"
-                android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cellClick"
+                    android:padding="10dp" />
+            </LinearLayout>
+
             <View
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary"
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
-                />
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/colorPrimary" />
+
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img8"
-                android:layout_width="wrap_content"
-                android:src="@drawable/nut"
-                android:padding="10dp"
-                android:layout_height="wrap_content"/>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="cellClick"
+                android:padding="10dp" />
+
             <View
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary"
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
-                />
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/img9"
-                android:layout_width="wrap_content"
-                android:src="@drawable/nut"
-                android:padding="10dp"
-                android:layout_height="wrap_content"/>
-            <View
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cellClick"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <View
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
-                />
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/colorPrimary" />
         </TableRow>
     </TableLayout>
 
