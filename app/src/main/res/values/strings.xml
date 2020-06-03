@@ -7,4 +7,12 @@
     <string name="draw">It\'s a Draw</string>
     <string name="player1wins">Player 1 wins</string>
     <string name="player2wins">Player 2 wins</string>
+    <string name="email_label_text">Email</string>
+    <string name="edit_text_hint">Nickname</string>
+    <string name="nickname_label_text">Nickname</string>
+    <string name="label_color">Color</string>
+    <string name="label_crossnut">Cross / Nut</string>
+    <string name="btnletsGo_txt">Let\'s Go</string>
+    <string name="assign_text">You have been assigned</string>
+    <string name="restart_btn_text">restart</string>
 </resources>

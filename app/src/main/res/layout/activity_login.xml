@@ -53,15 +53,7 @@
             android:text="Signin/Register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/txtSkip"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:padding="20dp"
-            android:textColor="@color/design_default_color_primary"
-            android:text="Skip To the GamePlay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+
         <TextView
             android:layout_marginTop="20dp"
             android:text="Note:If you don't sign in,Online mode will be disabled"

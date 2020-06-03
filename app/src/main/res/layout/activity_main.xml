@@ -59,7 +59,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary" />
+                android:background="@color/white" />
 
             <LinearLayout
                 android:layout_width="100dp"
@@ -81,7 +81,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary" />
+                android:background="@color/white" />
 
             <LinearLayout
                 android:layout_width="100dp"
@@ -97,12 +97,6 @@
                     android:padding="10dp" />
             </LinearLayout>
 
-            <View
-                android:layout_width="2dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary" />
         </TableRow>
 
         <View
@@ -111,7 +105,7 @@
             android:layout_height="2dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="5dp"
-            android:background="@color/colorPrimary" />
+            android:background="@color/white" />
 
         <TableRow
             android:id="@+id/row2"
@@ -138,7 +132,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary" />
+                android:background="@color/white" />
 
             <LinearLayout
                 android:layout_width="100dp"
@@ -159,7 +153,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary" />
+                android:background="@color/white" />
 
             <LinearLayout
                 android:layout_width="100dp"
@@ -175,12 +169,7 @@
                     android:padding="10dp" />
             </LinearLayout>
 
-            <View
-                android:layout_width="2dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary" />
+
         </TableRow>
 
         <View
@@ -189,7 +178,7 @@
             android:layout_height="2dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="5dp"
-            android:background="@color/colorPrimary" />
+            android:background="@color/white" />
 
         <TableRow
             android:id="@+id/row3"
@@ -216,7 +205,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary" />
+                android:background="@color/white" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/img8"
@@ -230,7 +219,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary" />
+                android:background="@color/white" />
 
             <LinearLayout
                 android:layout_width="100dp"
@@ -246,13 +235,59 @@
                     android:padding="10dp" />
             </LinearLayout>
 
-            <View
-                android:layout_width="2dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="@color/colorPrimary" />
+
         </TableRow>
     </TableLayout>
+
+    <Button
+        android:onClick="restartGame"
+        android:background="@color/color4"
+        android:id="@+id/btnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/restart_btn_text"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSendRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="12dp"
+        android:onClick="request"
+        android:text="Send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/invite_edit_text"
+        android:layout_width="228dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:hint='Email To Invite'
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/btnSendRequest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+
+        android:id="@+id/button"
+        android:layout_width="83dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="accept"
+        android:text="Accept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSendRequest"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

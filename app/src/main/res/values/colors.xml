@@ -4,4 +4,12 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="placeholderBackground">#FFC7C7CC</color>
+    <color name="white">#fff</color>
+    <color name="color1">#3d6dab</color>
+    <color name="color2">#a4ab3d</color>
+    <color name="color3">#ab443d</color>
+    <color name="color4">#f6cd61</color>
+    <color name="color5">#fe8a71</color>
+    <color name="globalBg">#3da4ab</color>
 </resources>
+

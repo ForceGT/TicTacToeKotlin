@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorPicker">
+        <attr name="color_picker_background_x" format="color"/>
+        <attr name="color_picker_background_y" format="color"/>
+    </declare-styleable>
+</resources>
